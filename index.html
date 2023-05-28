@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <header>
+        <img src="imagenes/Logo.png" class="logo" alt="logo-alura">
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text-area" cols="30" rows="6" autoofcus placeholder="Ingrese el texto aqui"></textarea> 
+            <div>
+                <h6 class="informacion">&#9888; Solo letras minúsculas y sin acentos</h6>
+            </div> 
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="derecha">
+    
+            <textarea class="mensaje" cols="20" rows="9" placeholder="Mensaje">Ningún Mensaje fue encontrado</textarea>
+            <div>
+                <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+<script src="script.js"></script>    
+</html>
